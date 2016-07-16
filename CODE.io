@@ -1,16 +1,14 @@
 /*
-  Blink
-  Turns on an LED on for one second, then off for one second, repeatedly.
+  TreeFi Simulator
 
-  Most Arduinos have an on-board LED you can control. On the Uno and
-  Leonardo, it is attached to digital pin 13. If you're unsure what
-  pin the on-board LED is connected to on your Arduino model, check
-  the documentation at http://www.arduino.cc
+  Dieser Code simuliert das Verhalten des bei Jugend Hackt Ost 2015 entwickelten Projekts Treefi
+  Dabei werden die Zustände wie Strom, Wasser, WiFi mithilfe von LEDs angezeigt und der Lego Radfahrer 
+  wird über einen Motor angetrieben. (In wirklichkeit würde der echte Radfahrer den Strom erzeugen.
+  Hierfür müste der Code angepasst werden.)
 
-  This example code is in the public domain.
-
-  modified 8 May 2014
-  by Scott Fitzgerald
+  Der Code wurde entwickelt für ein Arduino Uno.
+  (Zum aufspielen des Codes wählt man den Atmel STK500 development board)
+  
  */
 
  int STROM = 13;    // LED, die anzeigt, ob Strom an ist
@@ -30,7 +28,7 @@ void setup() {
   pinMode(RAD,OUTPUT); 
   
 }
-  // Kommentar, HIGH heißt EIN, LOW heißt AUS
+  //HIGH heißt EIN, LOW heißt AUS
   
 // the loop function runs over and over again forever
 void loop() 
@@ -150,40 +148,3 @@ void loop()
   delay(3000);
 }
 
-
-
-
-
-
-
-
-
-
- // das zählt nicht
-  
-//  digitalWrite(13, HIGH);
-//  delay(1000);
-//  digitalWrite(12,HIGH);
-//  delay(4000);
-//  digitalWrite(8, HIGH);
-//  int x = 1;
-//  while(x = 1) 
-//  {
-//    int i = 0;
-//    while(i < 5)
-//    {
-//      digitalWrite(12, LOW);
-//      delay(1000);
-//      digitalWrite(12, HIGH);
-//      delay(1000);
-//      i = i +1;
-//    }
-//    int j = 0;
-//    while(j < 4)
-//    {
-//      digitalWrite(12, HIGH);
-//      delay(1000);
-//      j = j + 1;
-//    }        
-//  }
-//}
